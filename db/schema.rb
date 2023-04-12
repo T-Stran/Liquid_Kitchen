@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_12_125240) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_12_133747) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -28,16 +28,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_12_125240) do
     t.string "strIngredient8"
     t.string "strIngredient9"
     t.string "strIngredient10"
-    t.integer "strMeasure1"
-    t.integer "strMeasure2"
-    t.integer "strMeasure3"
-    t.integer "strMeasure4"
-    t.integer "strMeasure5"
-    t.integer "strMeasure6"
-    t.integer "strMeasure7"
-    t.integer "strMeasure8"
-    t.integer "strMeasure9"
-    t.integer "strMeasure10"
+    t.string "strMeasure1"
+    t.string "strMeasure2"
+    t.string "strMeasure3"
+    t.string "strMeasure4"
+    t.string "strMeasure5"
+    t.string "strMeasure6"
+    t.string "strMeasure7"
+    t.string "strMeasure8"
+    t.string "strMeasure9"
+    t.string "strMeasure10"
     t.string "strDrinkThumb"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
