@@ -1,0 +1,9 @@
+<tbody id="ingredients">
+  <% @ingredients.each do |ingredient| %>
+    <tr>
+      <td><%= ingredient.name %></td>
+      <td><%= link_to 'Add', edit_ingredient_path(ingredient) %></td>
+      <td><%= link_to 'Remove', ingredient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</tbody>
