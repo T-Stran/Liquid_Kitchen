@@ -4,6 +4,10 @@ class IngredientsController < ApplicationController
     @ingredients = Ingredient.all
   end
 
+  def show
+    @ingredients = Ingredient.where("ingredient LIKE ?", "%#{params[:query]}%")
+  end
+
   def search
     if params[:query].present?
       @ingredients = Ingredient.where("ingredient LIKE ?", "%#{params[:query]}%")
@@ -20,5 +24,3 @@ class IngredientsController < ApplicationController
     )
   end
 end
-
-
