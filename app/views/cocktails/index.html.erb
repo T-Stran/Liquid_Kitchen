@@ -1,1 +1,17 @@
-<h1>Cocktail Index Page</h1>
+<h1>All Cocktails</h1>
+
+<div class="container">
+
+  <% @cocktails.each do |cocktail| %>
+    <div class="cocktail">
+      <br><img src="https://www.liquor.com/thmb/sUKZSwJj7slc5l-LDyK8eajT0LY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/very-sexy-martini-720x720-primary-b1212ebf73f54f898a56f7f0b60c0a34.jpg", width = "300"><br>
+      <br><%= cocktail.name %><br>
+        <br><%= cocktail.recipe %><br>
+        <br>
+    </div>
+  <% end %>
+
+</div>
+
+
+>
