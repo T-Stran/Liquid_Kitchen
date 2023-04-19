@@ -5,3 +5,18 @@
 @import "navbar";
 
 
+.container {
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  display: grid;
+  width: 100%;
+
+
+}
+
+.cocktail {
+  border: 1px solid ;
+  margin: 10px;
+  width: auto;
+}
