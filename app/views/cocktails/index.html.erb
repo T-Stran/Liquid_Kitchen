@@ -19,9 +19,10 @@
       <div class="name">
         <%= cocktail.name %>
       </div>
-      <img src="https://www.liquor.com/thmb/sUKZSwJj7slc5l-LDyK8eajT0LY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/very-sexy-martini-720x720-primary-b1212ebf73f54f898a56f7f0b60c0a34.jpg", width = "280", class="cocktail-image"><br>
-      <br>
+        <%= image_tag(cocktail.strDrinkThumb, class: "cocktail-image") %></ul>
+
       <div class="ingredients">
+<br>
         <ul><%= cocktail.strIngredient1.capitalize %></ul>
         <ul><%= cocktail.strIngredient2.capitalize %></ul>
         <ul><%= cocktail.strIngredient3.capitalize %></ul>
