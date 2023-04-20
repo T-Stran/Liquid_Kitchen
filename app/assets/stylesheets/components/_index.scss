@@ -4,44 +4,6 @@
 @import "form_legend_clear";
 @import "navbar";
 @import "searchbar";
+@import "btn_main";
+@import "indexpage.scss";
 
-
-.container {
-  display: flex;
-  text-align: center;
-  border-radius: 10px;
-  display: grid;
-  width: 365px;
-  justify-content: center;
-
-}
-
-.cocktail {
-  border: 3px solid ;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  width: 320px;
-  padding-top: 10px;
-  border-radius: 5px;
-  font-size: small;
-  background-color: #59125B;
-}
-
-.name {
-  font-weight: bold;
-  font-size: large;
-  margin-bottom: 10px;
-}
-
-
-.cocktail-image {
-  border: 3px solid;
-  border-radius: 5px;
-  width: 280px;
-  image-rendering: 280px;
-}
-
-.ingredients {
-  display: grid;
-  margin-right: 30px;
-}
