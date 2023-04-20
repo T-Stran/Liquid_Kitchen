@@ -1,1 +1,17 @@
 // Specific CSS for your home-page
+h1 {
+  display: flex;
+  font-family: 'Petit Formal Script', cursive;
+  justify-content: center;
+
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home {
+  justify-content: center;
+  margin-top: 75px;
+}
