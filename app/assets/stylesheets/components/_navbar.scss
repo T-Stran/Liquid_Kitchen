@@ -1,19 +1,20 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: #2F0631;
-  border-bottom: #D0B380 solid 2.5px;
-}
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
 
 .navbar-name {
   font-size: xx-large;
-  margin-right: 15px;
   font-weight: bolder;
+  width: 365px;
+
+
+}
+
+.container-navbar {
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  padding: 8px;
+  justify-content: center;
+  background: #2F0631;
+  border-bottom: #D0B380 solid 2.5px;
 }
