@@ -1,0 +1,38 @@
+<div class="container">
+
+  <h1><%= @cocktail.name %></h1>
+
+  <div class="cocktail">
+    <%= image_tag(@cocktail.strDrinkThumb, class: "cocktail-image") %></ul>
+      <div class="ingredients-show">
+        <h4>Ingredients</h4>
+        <div class ="list"></div>
+          <ul><%= @cocktail.strIngredient1.capitalize %> - <%= @cocktail.strMeasure1 %></ul>
+          <ul><%= @cocktail.strIngredient2.capitalize %> - <%= @cocktail.strMeasure2 %></ul>
+          <% if @cocktail.strIngredient3? %>
+            <ul><%= @cocktail.strIngredient3.capitalize %> - <%= @cocktail.strMeasure3 %></ul>
+          <% end %>
+          <% if @cocktail.strIngredient4? %>
+            <ul><%= @cocktail.strIngredient4.capitalize %> - <%= @cocktail.strMeasure4 %></ul>
+          <% end %>
+          <% if @cocktail.strIngredient5? %>
+            <ul><%= @cocktail.strIngredient5.capitalize %> - <%= @cocktail.strMeasure5 %></ul>
+          <% end %>
+          <% if @cocktail.strIngredient6? %>
+            <ul><%= @cocktail.strIngredient6.capitalize %> - <%= @cocktail.strMeasure6 %></ul>
+          <% end %>
+          <% if @cocktail.strIngredient7? %>
+            <ul><%= @cocktail.strIngredient7.capitalize %> - <%= @cocktail.strMeasure7 %></ul>
+          <% end %>
+          <% if @cocktail.strIngredient8? %>
+            <ul><%= @cocktail.strIngredient8.capitalize %> - <%= @cocktail.strMeasure8 %></ul>
+          <% end %>
+          <% if @cocktail.strIngredient9? %>
+            <ul><%= @cocktail.strIngredient9.capitalize %> - <%= @cocktail.strMeasure9 %></ul>
+          <% end %>
+        <h4>Direction</h4>
+        <%= @cocktail.recipe %>
+
+      </div>
+  </div>
+</div>

@@ -8,4 +8,10 @@ class CocktailsController < ApplicationController
     end
   end
 
+
+  def show
+    @cocktail = Cocktail.find(params[:id])
+
+  end
+
 end
