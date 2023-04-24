@@ -15,19 +15,17 @@
 <br>
 
   <% @cocktails.each do |cocktail| %>
-    <div class="cocktail">
-      <div class="name">
-        <%= cocktail.name %>
-      </div>
-        <%= image_tag(cocktail.strDrinkThumb, class: "cocktail-image") %></ul>
-
-      <div class="ingredients">
-<br>
-        <ul><%= cocktail.strIngredient1.capitalize %></ul>
-        <ul><%= cocktail.strIngredient2.capitalize %></ul>
-        <ul><%= cocktail.strIngredient3.capitalize %></ul>
-      </div>
-    </div>
+      <%= link_to cocktail_path(cocktail), class: "cocktail" do %>
+        <div class="name">
+          <%= cocktail.name %>
+        </div>
+          <%= image_tag(cocktail.strDrinkThumb, class: "cocktail-image") %></ul>
+        <div class="ingredients">
+          <ul><%= cocktail.strIngredient1.capitalize %></ul>
+          <ul><%= cocktail.strIngredient2.capitalize %></ul>
+          <ul><%= cocktail.strIngredient3.capitalize %></ul>
+        </div>
+        <% end %>
   <% end %>
 
 </div>
